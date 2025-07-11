@@ -6,10 +6,10 @@ function Hero() {
   return (
     <div className='flex flex-col md:flex-row bg-white'>
         <div className='mt-[20px] md:mt-[90px] px-5 md:px-12 w-full md:w-1/2 pb-14'>
-            <h2 className='text-black text-[35px] lg:text-[58px] font-bold mb-2 md:mb-4
-             '>Enjoy Luxury Flights! <br /> Value for Money.</h2>
-               {/* <h2 className='text-black text-[25px] lg:text-[58px] font-bold mb-2 md:mb-4
-             '>Nothing Beats a Jet-2 Holiday! <br /> Save $50.</h2> */}
+            {/* <h2 className='text-black text-[35px] lg:text-[58px] font-bold mb-2 md:mb-4
+             '>Enjoy Luxury Flights! <br /> Value for Money.</h2> */}
+               <h2 className='text-black text-[25px] lg:text-[58px] font-bold mb-2 md:mb-4
+             '>Nothing Beats a Jet-2 Holiday! <br /> <span className='text-[20px]'>and right now you can Save £50.</span></h2>
                 <Link to={'/booking'} >
              <button className='bg-black text-white text-[14px] md:text-[23px] text-left border-none
                 rounded-full w-[140px] h-[30px] md:w-[250px] md:h-[50px] px-3 md:px-6 py-2 md:py-3 flex items-center gap-1
