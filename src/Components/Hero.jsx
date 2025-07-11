@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 
 function Hero() {
   return (
-    <div className='flex bg-white'>
-        <div className='mt-[70px] md:mt-[90px] px-5 md:px-12 w-1/2 pb-14'>
-            <h2 className='text-black text-[25px] lg:text-[58px] font-bold mb-2 md:mb-4
+    <div className='flex flex-col md:flex-row bg-white'>
+        <div className='mt-[20px] md:mt-[90px] px-5 md:px-12 w-full md:w-1/2 pb-14'>
+            <h2 className='text-black text-[35px] lg:text-[58px] font-bold mb-2 md:mb-4
              '>Enjoy Luxury Flights! <br /> Value for Money.</h2>
                {/* <h2 className='text-black text-[25px] lg:text-[58px] font-bold mb-2 md:mb-4
              '>Nothing Beats a Jet-2 Holiday! <br /> Save $50.</h2> */}
@@ -20,7 +20,7 @@ function Hero() {
                 </Link>
             
         </div>
-        <img src={logo_1} alt="logo_1" className='w-1/2 h-[300px] md:h-auto' />
+        <img src={logo_1} alt="logo_1" className='w-full md:w-1/2 h-[300px] md:h-auto' />
     </div>
   )
 }
