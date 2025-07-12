@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { FaArrowRight } from "react-icons/fa6";
 
 function AboutUs() {
+
   return (
     
     <div className='flex items-center justify-center mt-10 md:mt-20 '>
@@ -12,21 +13,24 @@ function AboutUs() {
 
         <div className='flex flex-col md:flex-row gap-4 md:gap-8 mt-5 md:mt-10'>
 
-          <div className='bg-white text-black border-1 px-5 py-3 md:px-6 md:py-6 border-gray-200 rounded-2xl shadow-lg
+          <div data-aos="flip-left" data-aos-duration="1000"
+           className='bg-white text-black border-1 px-5 py-3 md:px-6 md:py-6 border-gray-200 rounded-2xl shadow-lg
            hover:scale-110 animation-all duration-300 ease-in-out '>
             <FaArrowRight className='text-[#dcbfa6]'/>
             <h3 className='font-bold mt-2'>Online Seat Booking</h3>
             <p  className='w-[250px] text-[12px] md:text-[14px] mt-3'>You can confirm price book a seat online without having to go to the park </p>
           </div>
 
-          <div className='bg-white text-black border-2 px-5 py-3 md:px-6 md:py-6 border-gray-200 rounded-2xl shadow-lg
+          <div data-aos="flip-left" data-aos-duration="1000"
+           className='bg-white text-black border-2 px-5 py-3 md:px-6 md:py-6 border-gray-200 rounded-2xl shadow-lg
           hover:scale-110 animation-all duration-300 ease-in-out'>
             <FaArrowRight className='text-[#dcbfa6]'/>
             <h3 className='font-bold mt-1 md:mt-2'>Full Bus Charter</h3>
             <p  className='w-[250px] text-[12px] md:text-[14px] mt-1 md:mt-3'>You can book a full bus for your vacation or a trip back home from your phone </p>
           </div>
 
-          <div className='bg-white text-black border-2 px-5 py-3 md:px-6 md:py-6 border-gray-200 rounded-2xl shadow-lg
+          <div data-aos="flip-left" data-aos-duration="800"
+           className='bg-white text-black border-2 px-5 py-3 md:px-6 md:py-6 border-gray-200 rounded-2xl shadow-lg
           hover:scale-110 animation-all duration-300 ease-in-out'>
             <FaArrowRight className='text-[#dcbfa6]' />
             <h3 className='font-bold mt-2'>Waybill Services</h3>
@@ -35,11 +39,12 @@ function AboutUs() {
         </div>
 
       <Link to={'/booking'}>
-      <button className='bg-white text-black text-[16px] md:text-[22px] text-left border-none
-              rounded-full mt-5 md:mt-10 w-[150px] h-[30px] md:w-[251px] md:h-[50px] p-2 md:p-5 flex items-center gap-4
-               '>Book Now 
-               <div className=' rounded-full w-4 h-4 md:w-8 md:h-8 flex items-center justify-center '>
-                <FaArrowRight className='text-black' /></div>
+      <button className='relative font-semibold overflow-hidden group bg-white text-black text-[16px] md:text-[22px] text-left border-none
+              rounded-full mt-5 md:mt-10 w-[150px] h-[30px] md:w-[180px] md:h-[50px] p-2 md:p-5 flex items-center gap-4
+               '>  <span className='absolute inset-0 w-full bg-black -translate-x-full group-hover:translate-x-0 rounded-md
+               transition-transform duration-400   '></span>
+               <span className='relative z-10 text-black group-hover:text-white transition-colors duration-400'>
+                      Choose Us</span>
         </button>
       </Link>
       </div>

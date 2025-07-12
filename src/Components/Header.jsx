@@ -13,8 +13,12 @@ function Header({text, link }) {
         </ul>
 
         <Link to={link} >
-        <button className='bg-white text-black border-2 rounded-2xl font-poppins 
-        px-[10px] py-[5px] md:px-[20px] md:py-[10px] text-[14px] '>{text}</button>
+        <button className=' relative font-semibold overflow-hidden group border-2 border-black rounded-2xl font-poppins 
+        px-[10px] py-[5px] md:px-[20px] md:py-[10px] text-[14px] '>
+          <span className='absolute inset-0 w-full bg-black -translate-x-full group-hover:translate-x-0 rounded-md
+          transition-transform duration-400   '></span>
+          <span className='relative z-10 text-black group-hover:text-white transition-colors duration-400'>
+            {text}</span></button>
         </Link>
         
     </nav>

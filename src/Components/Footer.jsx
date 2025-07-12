@@ -2,7 +2,7 @@
 
 function Footer() {
   return (
-    <div>
+    <div  data-aos="fade-up" data-aos-duration="1000">
      <footer className=" bg-[#464646] text-white px-10 ">
          <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between items-start gap-8">
