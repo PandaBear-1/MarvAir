@@ -26,9 +26,9 @@ function Form() {
         
        const FilteredFlights = mockFlightsData.filter((flight)=> (
         form.departure.trim().toLowerCase() === flight.departure.toLowerCase() &&
-        flight.destination.trim().toLowerCase() == form.destination.trim().toLowerCase() &&
-        flight.date.trim().toLowerCase() == form.date.trim().toLowerCase()
+        flight.destination.trim().toLowerCase() == form.destination.trim().toLowerCase()
       ))
+      .map(flight => ({...flight, date:form.date}) )
 
       setFlights(FilteredFlights)
        
@@ -59,31 +59,44 @@ function Form() {
             <h2 className="text-black text-2xl md:text-4xl font-bold">Search for Available Flights</h2>
            <form onSubmit={handleSubmit} className="w-full max-w-3xl mx-auto bg-white shadow p-6 rounded-lg text-black mt-2">
           <div className="flex flex-col md:flex-row gap-4">
-            <div className="flex-1">
-              <label className="block mb-1 text-sm font-medium text-gray-700">Departure</label>
-              <input
-                type="text"
-                name="departure"
-                value={form.departure}
-                onChange={handleChange}
-                required
-                className="w-full border border-gray-300 rounded px-3 py-2 "
-                placeholder="e.g. Lagos"
-              />
-            </div>
-    
-            <div className="flex-1">
-              <label className="block mb-1 text-sm font-medium text-gray-700">Destination</label>
-              <input
-                type="text"
-                name="destination"
-                value={form.destination}
-                onChange={handleChange}
-                required
-                className="w-full border border-gray-300 rounded px-3 py-2"
-                placeholder="e.g. Abuja"
-              />
-            </div>
+          <div className="flex-1">
+  <label className="block mb-1 text-sm font-medium text-gray-700">Departure</label>
+  <select
+    name="departure"
+    value={form.departure}
+    onChange={handleChange}
+    required
+    className="w-full border border-gray-300 rounded px-3 py-2"
+  >
+    <option value="">Select departure</option>
+    <option value="Lagos">Lagos</option>
+    <option value="Abuja">Abuja</option>
+    <option value="Port-Harcourt">Port-Harcourt</option>
+    <option value="Ibadan">Ibadan</option>
+    <option value="Enugu">Enugu</option>
+    <option value="Kano">Kano</option>
+  </select>
+</div>
+
+<div className="flex-1">
+  <label className="block mb-1 text-sm font-medium text-gray-700">Destination</label>
+  <select
+    name="destination"
+    value={form.destination}
+    onChange={handleChange}
+    required
+    className="w-full border border-gray-300 rounded px-3 py-2"
+  >
+    <option value="">Select destination</option>
+    <option value="Lagos">Lagos</option>
+    <option value="Abuja">Abuja</option>
+    <option value="Port-Harcourt">Port-Harcourt</option>
+    <option value="Ibadan">Ibadan</option>
+    <option value="Enugu">Enugu</option>
+    <option value="Kano">Kano</option>
+  </select>
+</div>
+
           </div>
     
           <div className="flex flex-col md:flex-row gap-4">

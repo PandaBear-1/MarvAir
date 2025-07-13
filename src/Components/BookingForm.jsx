@@ -13,6 +13,7 @@ function BookingForm(){
   const flight = location.state?.flight;
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState('')
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -34,6 +35,7 @@ function BookingForm(){
       setTimeout(() => navigate('/'), 3000);
     } catch (err) {
       console.error('Email failed:', err);
+      setError('Failed to send email. Please check your email address and try again.')
     } finally {
       setLoading(false);
     }
@@ -111,8 +113,9 @@ function BookingForm(){
             >
                 {loading ? 'Sending...' : 'Confirm Booking'}
             </button>
-
             {success && <p className="mt-4 text-green-500">Booking Confirmed 🎉</p>}
+            {error && <p className="text-red-500 mt-2">{error}</p>}
+            
             </div>
         </form>
 
