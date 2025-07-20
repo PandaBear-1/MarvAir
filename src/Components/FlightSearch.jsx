@@ -32,13 +32,6 @@ function Form() {
 
       setFlights(FilteredFlights)
        
-       setForm({
-          departure: '',
-          destination: '',
-          date: '',
-          passengers: 1,
-          flightClass: 'economy',
-        })
         scrollToForm()
       };
 

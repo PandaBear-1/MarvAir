@@ -15,26 +15,26 @@ function AboutUs() {
 
           <div data-aos="flip-left" data-aos-duration="1000"
            className='bg-white text-black border-1 px-5 py-3 md:px-6 md:py-6 border-gray-200 rounded-2xl shadow-lg
-           hover:scale-110 animation-all duration-300 ease-in-out '>
+           hover:scale-105 transition-transform duration-300 ease-in-out '>
             <FaArrowRight className='text-[#dcbfa6]'/>
             <h3 className='font-bold mt-2'>Online Seat Booking</h3>
-            <p  className='w-[250px] text-[12px] md:text-[14px] mt-3'>You can confirm price book a seat online without having to go to the park </p>
+            <p  className='w-[250px] text-[12px] md:text-[14px] mt-3'>You can confirm price, book a seat online at your comfort with just your smartphone </p>
           </div>
 
           <div data-aos="flip-left" data-aos-duration="1000"
            className='bg-white text-black border-2 px-5 py-3 md:px-6 md:py-6 border-gray-200 rounded-2xl shadow-lg
-          hover:scale-110 animation-all duration-300 ease-in-out'>
+          hover:scale-105 transition-transform duration-300 ease-in-out'>
             <FaArrowRight className='text-[#dcbfa6]'/>
-            <h3 className='font-bold mt-1 md:mt-2'>Full Bus Charter</h3>
-            <p  className='w-[250px] text-[12px] md:text-[14px] mt-1 md:mt-3'>You can book a full bus for your vacation or a trip back home from your phone </p>
+            <h3 className='font-bold mt-1 md:mt-2'>Jet-2 Family Vacation</h3>
+            <p  className='w-[250px] text-[12px] md:text-[14px] mt-1 md:mt-3'>You can book a family vaction wtih our Jet-2 special offer and save £50 per person, thats £200 for a family of 4! </p>
           </div>
 
           <div data-aos="flip-left" data-aos-duration="800"
            className='bg-white text-black border-2 px-5 py-3 md:px-6 md:py-6 border-gray-200 rounded-2xl shadow-lg
-          hover:scale-110 animation-all duration-300 ease-in-out'>
+          hover:scale-105 transition-transform duration-300 ease-in-out'>
             <FaArrowRight className='text-[#dcbfa6]' />
-            <h3 className='font-bold mt-2'>Waybill Services</h3>
-            <p  className='w-[250px] text-[12px] md:text-[14px]  mt-1 md:mt-3'>Access our fast easy and safe waybill services to anywhere in Cross River </p>
+            <h3 className='font-bold mt-2'>International Courier Service</h3>
+            <p  className='w-[250px] text-[12px] md:text-[14px]  mt-1 md:mt-3'>Access our fast, easy and safe courier services to anywhere in the World </p>
           </div>
         </div>
 
